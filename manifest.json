@@ -1,0 +1,13 @@
+{
+  "name": "Block Twitter ads from your Timeline",
+  "version": "1.0",
+  "description": "Well, really just hide them since they are annoying! Will work from https://twitter.com/home",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+        "matches": ["https://twitter.com/home"],
+        "js": ["/block-ads.js"]
+    }
+  ],
+  "manifest_version": 2
+}
